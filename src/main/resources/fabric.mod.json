@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "apexara",
+  "version": "${version}",
+  "name": "Apexara",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/apexara/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "com.sypztep.apexara.client.ApexaraDataGenerator"
+    ],
+    "client": [
+      "com.sypztep.apexara.client.ApexaraClient"
+    ],
+    "main": [
+      "com.sypztep.apexara.Apexara"
+    ],
+    "modmenu": [
+      "com.sypztep.apexara.client.compat.ModMenuIntegration"
+    ],
+    "cardinal-components-entity": [
+      "com.sypztep.apexara.init.cca.ApexaraEntityComponents"
+    ],
+    "cardinal-components-scoreboard": [
+      "com.sypztep.apexara.init.cca.ApexaraScoreboardComponents"
+    ]
+  },
+  "mixins": [
+    "apexara.mixins.json",
+    {
+      "config": "apexara.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
