@@ -4,8 +4,6 @@
   "package": "com.sypztep.apexara.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "core.attribute.LivingEntityMixin",
-    "core.attribute.PlayerMixin"
   ],
   "injectors": {
     "defaultRequire": 1

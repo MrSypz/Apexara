@@ -4,7 +4,7 @@
   "version": "${version}",
   "name": "Apexara",
   "description": "",
-  "authors": [],
+  "authors": ["MrSypz"],
   "contact": {},
   "license": "All-Rights-Reserved",
   "icon": "assets/apexara/icon.png",
@@ -27,6 +27,9 @@
     ],
     "cardinal-components-scoreboard": [
       "com.sypztep.apexara.init.cca.ApexaraScoreboardComponents"
+    ],
+    "plateau_attributes": [
+      "com.sypztep.apexara.init.ApexaraEntityAttributes"
     ]
   },
   "mixins": [
@@ -40,5 +43,14 @@
     "fabricloader": ">=${loader_version}",
     "fabric-api": "*",
     "minecraft": "${minecraft_version}"
+  },
+  "custom": {
+    "modmenu": {
+      "parent": {
+        "id": "plateau",
+        "name": "PlateauLib",
+        "badges": ["library"]
+      }
+    }
   }
 }
